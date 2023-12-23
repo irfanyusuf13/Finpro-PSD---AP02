@@ -20,4 +20,4 @@ Metode pertama adalah berdasarkan waktu, di mana tanaman akan disiram air setiap
 
 ### Moed 3: Randomized Interval
 
-## Finite State Machine
+
