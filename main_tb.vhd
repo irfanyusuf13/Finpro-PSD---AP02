@@ -1,58 +1,58 @@
-LIBRARY IEEE;
-USE IEEE.std_logic_1164.ALL;
-USE IEEE.numeric_std.ALL;
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
 
-ENTITY main_tb IS
-END ENTITY main_tb;
+entity main_tb is
+end entity main_tb;
 
-ARCHITECTURE behavior OF main_tb IS
+architecture tb_arch of main_tb is
+    signal CLK, RST : std_logic := '0';
+    signal humidityLevel, waterTime, counterTime : std_logic_vector(0 to 6) := (others => '0');
+    signal dropWater, wateringDrop, dropWatering : std_logic;
+    signal wateringCount, waterCount : integer := 0;
 
-    COMPONENT main
-        PORT (
-            CLK, RST : IN STD_LOGIC;
-            humidityLevel : IN STD_LOGIC_VECTOR(0 TO 6);
-            dropWater : OUT STD_LOGIC;
-            waterCount : OUT INTEGER
+    -- Add your entity instantiation here
+    component main
+        port (
+            CLK, RST : in std_logic;
+            humidityLevel, waterTime, counterTime : inout std_logic_vector(0 to 6); 
+            dropWater, wateringDrop, dropWatering : out std_logic;
+            wateringCount : inout integer;
+            waterCount : out integer
         );
-    END COMPONENT ;
+    end component;
 
-    SIGNAL CLK, RST : STD_LOGIC := '0';
-    SIGNAL humidityLevel : STD_LOGIC_VECTOR(0 TO 6) := "0000000";
-    SIGNAL dropWater : STD_LOGIC;
-    SIGNAL waterCount : INTEGER;
-    SIGNAL timeWater, timeCounter : STD_LOGIC_VECTOR(0 TO 6);
-    SIGNAL wateringDrop : STD_LOGIC;
-
-    BEGIN
-    UUT : main
-        PORT MAP (
+begin
+    UUT: main
+        port map (
             CLK => CLK,
             RST => RST,
             humidityLevel => humidityLevel,
+            waterTime => waterTime,
+            counterTime => counterTime,
             dropWater => dropWater,
+            wateringDrop => wateringDrop,
+            dropWatering => dropWatering,
+            wateringCount => wateringCount,
             waterCount => waterCount
         );
 
-    CLK_PROCESS : process
+    CLK_PROCESS: process
     begin
-        while now < 100 ps loop
-            clk <= not clk;
+        while now < 10000 ps loop
+            CLK <= not CLK;
             wait for 5 ps;
         end loop;
         wait;
-    END PROCESS ;
+    end process;
 
-    STIMULUS_PROCESS: PROCESS
-    BEGIN
-        RST <= '1';  
-        WAIT FOR 10 NS;
-        RST <= '0'; 
-        WAIT FOR 10 NS;
+    STIMULUS_PROCESS: process
+    begin
+        wait for 15 ps; 
 
-        for i in 1 to 64 loop
-            WAIT UNTIL rising_edge(clk);
-        end loop;
-        WAIT;
-    END PROCESS ; 
-
-END ARCHITECTURE behavior;
+        RST <= '1';
+        wait for 5 ps;
+        RST <= '0';
+        wait;
+    end process;
+end architecture tb_arch;

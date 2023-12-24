@@ -6,18 +6,14 @@ USE IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity main is
     port (
         CLK, RST : IN STD_LOGIC;
-        humidityLevel : IN STD_LOGIC_VECTOR(0 to 6); 
-        dropWater : OUT STD_LOGIC;
+        humidityLevel, waterTime, counterTime, timeWater, timecounter : INOUT STD_LOGIC_VECTOR(0 to 6); 
+        dropWater, wateringDrop, dropWatering : OUT STD_LOGIC;
+        wateringCount : INOUT INTEGER;
         waterCount : OUT INTEGER
     );
 end entity main;
 
 architecture structural of main is
-    signal waterTime, counterTime : STD_LOGIC_VECTOR(0 to 6);
-    signal wateringDrop : STD_LOGIC;
-    signal wateringCount : INTEGER;
-    signal timeWater, timecounter : STD_LOGIC_VECTOR(0 to 6);
-    signal dropWatering : STD_LOGIC;
 
     component randomizedWatering
         port (
@@ -38,7 +34,7 @@ architecture structural of main is
     component sensor
         port (
             CLK, RST : IN STD_LOGIC;
-            humidityLevel : IN STD_LOGIC_VECTOR(0 to 6); 
+            humidityLevel : INOUT STD_LOGIC_VECTOR(0 to 6); 
             dropWater : OUT STD_LOGIC;
             waterCount : OUT INTEGER
         );

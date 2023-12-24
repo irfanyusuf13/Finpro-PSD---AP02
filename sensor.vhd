@@ -6,7 +6,7 @@ USE IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity sensor is
     port (
         CLK, RST : IN STD_LOGIC;
-        humidityLevel : IN STD_LOGIC_VECTOR(0 to 6); 
+        humidityLevel : INOUT STD_LOGIC_VECTOR(0 to 6); 
         dropWater : OUT STD_LOGIC;
         waterCount : OUT INTEGER
     );
@@ -69,6 +69,7 @@ end process;
     
     process(CLK) is
     begin
+        humidityLevel <= "1100101";
         if rising_edge(CLK) then
             curr_state_sensor <= next_state_sensor;
         end if;
