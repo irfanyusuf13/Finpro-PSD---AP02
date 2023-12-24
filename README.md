@@ -34,3 +34,6 @@ main component merupakan penggabungan ketiga mode yang ada dalam Automated Water
 
 #### State Diagram Main Component:
 ![State Diagram 4](https://cdn.discordapp.com/attachments/1188127698728534067/1188502132152860754/Diagram_Tanpa_Judul.drawio_28.png?ex=659ac1dd&is=65884cdd&hm=620f94dae3b0de87df75cfc8fd52c36857a92748eab96f784c064a92f1b6e809&)
+
+## PowerPoint Presentasi
+[Presentasi PDF](https://github.com/irfanyusuf13/Finpro-PSD---AP02/blob/master/PPT%20Automated%20Watering%20System%20PSD%20AP02.pdf)
