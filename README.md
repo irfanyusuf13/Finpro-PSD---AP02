@@ -30,5 +30,7 @@ randomizedWatering adalah Metode yang mensimulasikan sistem penyiraman tanaman s
 ![State Diagram 3](https://cdn.discordapp.com/attachments/1188127698728534067/1188502131922194524/Diagram_Tanpa_Judul.drawio_27.png?ex=659ac1dd&is=65884cdd&hm=cb672a217df3bcaeaec525d70e3d460249345027549b95218b0bc2fc1c3fe8ea&)
 
 ## Main Component:
+main component merupakan penggabungan ketiga mode yang ada dalam Automated Watering System, dibuat agar responsif terhadap kelembaban tanah dan dapat diatur dengan waktu yang diacak atau terjadwal. Dengan demikian, implementasi VHDL ini menghasilkan Automated Watering System yang efisien dan otomatis.
+
 #### State Diagram Main Component:
 ![State Diagram 4](https://cdn.discordapp.com/attachments/1188127698728534067/1188502132152860754/Diagram_Tanpa_Judul.drawio_28.png?ex=659ac1dd&is=65884cdd&hm=620f94dae3b0de87df75cfc8fd52c36857a92748eab96f784c064a92f1b6e809&)
