@@ -1,0 +1,7 @@
+
+State Machine - |sensor|curr_state_sensor
+Name curr_state_sensor.WATER_PLANT curr_state_sensor.CHECK_THRESHOLD curr_state_sensor.READ_MOISTURE_LEVEL curr_state_sensor.INIT 
+curr_state_sensor.INIT 0 0 0 0 
+curr_state_sensor.READ_MOISTURE_LEVEL 0 0 1 1 
+curr_state_sensor.CHECK_THRESHOLD 0 1 0 1 
+curr_state_sensor.WATER_PLANT 1 0 0 1 

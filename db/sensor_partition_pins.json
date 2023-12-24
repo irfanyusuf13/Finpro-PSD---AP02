@@ -1,0 +1,149 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "dropWater",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[0]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[1]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[2]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[3]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[4]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[5]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[6]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[7]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[8]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[9]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[10]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[11]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[12]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[13]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[14]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[15]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[16]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[17]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[18]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[19]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[20]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[21]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[22]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[23]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[24]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[25]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[26]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[27]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[28]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[29]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[30]",
+					"strict" : false
+				},
+				{
+					"name" : "waterCount[31]",
+					"strict" : false
+				},
+				{
+					"name" : "RST",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

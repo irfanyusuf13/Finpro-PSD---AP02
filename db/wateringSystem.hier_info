@@ -1,0 +1,20 @@
+|wateringSystem
+CLK => curr_state~1.DATAIN
+RST => ~NO_FANOUT~
+waterTime[6] <> <VCC>
+waterTime[5] <> <VCC>
+waterTime[4] <> <GND>
+waterTime[3] <> <GND>
+waterTime[2] <> <GND>
+waterTime[1] <> <GND>
+waterTime[0] <> <GND>
+counterTime[6] <> counterTime[6]
+counterTime[5] <> counterTime[5]
+counterTime[4] <> counterTime[4]
+counterTime[3] <> counterTime[3]
+counterTime[2] <> counterTime[2]
+counterTime[1] <> counterTime[1]
+counterTime[0] <> counterTime[0]
+dropWater <= dropWater$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
